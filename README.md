@@ -1,4 +1,4 @@
-# 🧳 Travel Management System
+# 🧳 Dream Filter Travel 
 
 A full-stack **Travel Booking & Management** system built with **Flutter** (frontend) and **Spring Boot** (backend). This project allows customers to explore travel packages, book transportation and hotels, and manage their bookings. Admins can manage resources and monitor customer activity via a clean interface.
 
