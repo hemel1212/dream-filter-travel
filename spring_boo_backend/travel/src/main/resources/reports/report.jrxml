@@ -1,0 +1,159 @@
+<!-- Created with Jaspersoft Studio version 7.0.2.final using JasperReports Library version 7.0.2-31532122640f516c6d17238ae0e41a08113d5ac0  -->
+<jasperReport name="Blank_A4" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="789f4ea9-b9a0-47ce-8b7a-ea96b0d56a45">
+	<property name="com.jaspersoft.studio.data.sql.tables" value="aGVtZWxfdHJhbnNwb3J0IEFTICw3OCw0NCxiNjU2ZGRiNC00MTlkLTRjOWQtYTE3MS1hNWFhMDE4&#xa;MDEwNmY7"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DBConnection.jrdax"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<dataset name="transport" uuid="8b8a183e-84e9-424a-b3df-e0cf3e4f486a">
+		<property name="com.jaspersoft.studio.data.sql.tables" value="aGVtZWxfdHJhbnNwb3J0IEFTICw2NiwyOSwxNmQxN2FmMi1lZWZjLTQzYzctYjcyMy1lNjNjYWY3&#xa;NWUwYWI7"/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DBConnection.jrdax"/>
+		<query language="SQL"><![CDATA[SELECT transport_id,
+	provider,
+	type,
+	price,
+	available_seat
+FROM hemel_transport]]></query>
+		<field name="transport_id" class="java.lang.Long">
+			<property name="com.jaspersoft.studio.field.name" value="transport_id"/>
+			<property name="com.jaspersoft.studio.field.label" value="transport_id"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="hemel_transport"/>
+		</field>
+		<field name="provider" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="provider"/>
+			<property name="com.jaspersoft.studio.field.label" value="provider"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="hemel_transport"/>
+		</field>
+		<field name="type" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="type"/>
+			<property name="com.jaspersoft.studio.field.label" value="type"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="hemel_transport"/>
+		</field>
+		<field name="price" class="java.lang.Double">
+			<property name="com.jaspersoft.studio.field.name" value="price"/>
+			<property name="com.jaspersoft.studio.field.label" value="price"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="hemel_transport"/>
+		</field>
+		<field name="available_seat" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.name" value="available_seat"/>
+			<property name="com.jaspersoft.studio.field.label" value="available_seat"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="hemel_transport"/>
+		</field>
+	</dataset>
+	<query language="SQL"><![CDATA[SELECT transport_id,
+	type,
+	provider,
+	price,
+	available_seat
+FROM hemel_transport]]></query>
+	<field name="transport_id" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="transport_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="transport_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="hemel_transport"/>
+	</field>
+	<field name="type" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="type"/>
+		<property name="com.jaspersoft.studio.field.label" value="type"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="hemel_transport"/>
+	</field>
+	<field name="provider" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="provider"/>
+		<property name="com.jaspersoft.studio.field.label" value="provider"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="hemel_transport"/>
+	</field>
+	<field name="price" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="price"/>
+		<property name="com.jaspersoft.studio.field.label" value="price"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="hemel_transport"/>
+	</field>
+	<field name="available_seat" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="available_seat"/>
+		<property name="com.jaspersoft.studio.field.label" value="available_seat"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="hemel_transport"/>
+	</field>
+	<background splitType="Stretch"/>
+	<title height="79" splitType="Stretch">
+		<element kind="staticText" uuid="03d05e0c-7abc-4e66-9fc4-ef56cf349e02" positionType="FixRelativeToBottom" x="10" y="10" width="540" height="55" fontName="Algerian" fontSize="29.0" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[All Transport]]></text>
+		</element>
+	</title>
+	<summary height="221" splitType="Stretch">
+		<element kind="component" uuid="6554c6a4-70ef-4131-9727-673598fbb8b3" x="10" y="0" width="536" height="221" style="Table_TH">
+			<component kind="table" horizontalPosition="Center" shrinkWidth="true">
+				<datasetRun uuid="6cbd7a98-55f3-4f09-82a9-91498e01b76b" subDataset="transport">
+					<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				</datasetRun>
+				<column kind="single" uuid="4ba9981e-dd0e-438e-ac17-776fb945a9e8" width="108">
+					<tableHeader height="30" style="Table_TH"/>
+					<detailCell height="30" style="Table_TD">
+						<element kind="textField" uuid="b4c394e6-b6e9-4ccc-8c9f-914d21075d91" x="0" y="0" width="108" height="30">
+							<expression><![CDATA[$F{transport_id}]]></expression>
+						</element>
+					</detailCell>
+				</column>
+				<column kind="single" uuid="f0e29cd3-41d4-4bcb-9b0c-2fe090104edc" width="107">
+					<tableHeader height="30" style="Table_TH"/>
+					<detailCell height="30" style="Table_TD">
+						<element kind="textField" uuid="141e504b-3cef-4a50-9e8e-5290d78400ee" x="0" y="0" width="107" height="30">
+							<expression><![CDATA[$F{provider}]]></expression>
+						</element>
+					</detailCell>
+				</column>
+				<column kind="single" uuid="670b65ae-bc69-463a-8361-ed4e14271f9e" width="107">
+					<tableHeader height="30" style="Table_TH"/>
+					<detailCell height="30" style="Table_TD">
+						<element kind="textField" uuid="c32bc82e-2229-4167-8c32-ec916dbe09fa" x="0" y="0" width="107" height="30">
+							<expression><![CDATA[$F{type}]]></expression>
+						</element>
+					</detailCell>
+				</column>
+				<column kind="single" uuid="e62c5178-3862-4997-abff-e102bbbc3986" width="107">
+					<tableHeader height="30" style="Table_TH"/>
+					<detailCell height="30" style="Table_TD">
+						<element kind="textField" uuid="e7e09619-9723-4897-8ddb-74da892f5063" x="0" y="0" width="107" height="30">
+							<expression><![CDATA[$F{price}]]></expression>
+						</element>
+					</detailCell>
+				</column>
+				<column kind="single" uuid="d2a9a912-9e9c-4f90-bc98-dd3bdb50ab84" width="107">
+					<tableHeader height="30" style="Table_TH"/>
+					<detailCell height="30" style="Table_TD">
+						<element kind="textField" uuid="ffe9d66a-ab14-4f0e-84a6-8e9f1517fa65" x="0" y="0" width="107" height="30">
+							<expression><![CDATA[$F{available_seat}]]></expression>
+						</element>
+					</detailCell>
+				</column>
+			</component>
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+			<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+			<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+			<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+			<property name="com.jaspersoft.studio.components.autoresize.next" value="true"/>
+			<property name="com.jaspersoft.studio.components.autoresize.proportional" value="true"/>
+		</element>
+	</summary>
+</jasperReport>
